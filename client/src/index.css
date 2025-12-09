@@ -119,6 +119,24 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Tajawal', sans-serif;
+  }
+  html {
+    direction: rtl;
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
